@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aha - Watch Movies</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-color:#111;
+    color:white;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    background:black;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:orange;
+}
+
+.hero{
+    height:80vh;
+    background:url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding-left:50px;
+}
+
+.hero-content{
+    max-width:500px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+button{
+    padding:10px 20px;
+    background:orange;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.movies{
+    padding:20px 40px;
+}
+
+.movie-row{
+    display:flex;
+    gap:15px;
+}
+
+.movie-row img{
+    width:180px;
+    border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">aha</div>
+    <div>Home | Movies | Web Series</div>
+</div>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Unlimited Telugu Entertainment</h1>
+        <p>Watch exclusive movies & series only on aha.</p>
+        <button onclick="play()">Play Now</button>
+    </div>
+</div>
+
+<div class="movies">
+    <h2>Trending Now</h2>
+    <div class="movie-row">
+        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba">
+        <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f">
+        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26">
+    </div>
+</div>
+
+<script>
+function play(){
+    alert("Playing Trailer...");
+}
+</script>
+
+</body>
+</html>
